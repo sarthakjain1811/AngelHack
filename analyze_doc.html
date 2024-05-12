@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Analyze your Docs
+    </title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='font.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="/css/regulatory_compliance_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='admin.css') }}"> -->
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.0.6/dist/markdown-it.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="logo_section">
+            <p class="company-name">Analyze your Docs</p>
+        </div>
+
+
+    </div>
+    <div class="content_area">
+        <div class="main_content">
+            <div class="title_bar">
+            </div>
+            <div class="container_doc">
+                <div class="container_upload">
+                    <div class="upload_section">
+                        <h4>Upload your file</h4>
+                        <p>You can upload Scannable or readable PDF Files.</p>
+                        <form id="upload-form" action="upload.php" method="POST" enctype="multipart/form-data">
+                            <div id="dropbox" class="upload-btn">
+                                <p>Drag and drop or <span>choose file.</span></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="upload_preview">
+                        <iframe id="pdf-iframe"></iframe>
+                    </div>
+                </div>
+                <div class="container_interact">
+                    <txt>Summary</txt>
+                    <i id="loading-icon" class="fa fa-spinner fa-spin"></i><br><br>
+                    <div id="summary">
+                        
+                    </div><br>
+                    <div class="summary">
+                        <p class="overview">
+                        </p>
+                        <hr>
+                        <form id="text-form">
+                            <textarea id="input-text" oninput="auto_grow(this)" name="input_text" placeholder="Enter your question.."></textarea>
+                            <!-- <input class="button" type="button" id="submit-btn" style="display: inline-block;" value="Submit"> -->
+                            <button type="button" id="submit-btn"><img src="../static/Assets/Icons/PwC_Funct_Icons_PaperAirplane_Outline_Black_RGB.svg"></button>
+                            <div id="submit-loader" hidden>
+                                <i class="fa fa-spinner fa-spin loader-icon"></i>
+                            </div>
+                        </form>
+                        <div id="output-container">
+                            <div id="conversation-container">
+                                <div class="message-container user">
+                                </div>
+                                <div class="message-container bot">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/js/regulatory_compliance.js"></script>
+    <script>  function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight) + "px";
+  }</script>
+</body>
+</html>
