@@ -1,0 +1,398 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background-color: #252525;
+  color: #FFFFFF;
+  font-family: PwC Helvetica Neue;
+  background-image: url('Assets/Grid Background.png'), url('Assets/Pattern on all screens.png');
+  background-size: cover, 10vw;
+  background-position: top, 89vw 25vh;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: #1F1F1F;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+}
+
+#logo_section {
+  width: 95%;
+  display: flex;
+  align-items: center;
+}
+
+#logo_section>a {
+  margin-left: 2vw;
+
+}
+
+#logo_section>a>img {
+  width: 3vw;
+}
+
+#logo_section>p {
+  margin: 0.6vh 1vw 1.5vh 0.5vw;
+  font-size: 2vh;
+}
+
+.user_initials {
+  border: 1px solid #D04A02;
+  border-radius: 5px;
+  padding: 0.4%;
+  font-size: 2vh;
+}
+
+.content_area {
+  display: flex;
+  margin: 2vh 1vw 1vh 1vw;
+  height: 89vh;
+}
+
+.sidebar {
+  width: 18%;
+  background-color: #191919;
+  border-radius: 5px;
+}
+
+.sidebar>nav>ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 2vh;
+}
+
+nav {
+  padding: 0 0.4vw;
+}
+
+nav>ul {
+  padding: 0;
+}
+
+.nav_item {
+
+  margin-top: 1vh;
+  padding: 1.5vh 0.5vw 1.5vh 0.5vw;
+  border-radius: 5px;
+}
+
+nav>ul>li>a>img {
+  height: 3vh;
+  padding-right: 0.25vw;
+  /* padding-bottom: 1vh; */
+  margin-bottom: -6px;
+}
+
+.lg {
+  margin-bottom: 2px !important;
+}
+
+nav>ul>li>a>div {
+  width: 80%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #415385;
+}
+
+.lower_sidebar {
+  position: absolute;
+  bottom: 4vh;
+}
+
+.lower_sidebar>nav>ul {
+  list-style-type: none;
+}
+
+.main_content {
+  width: 81%;
+  /* background-color: #191919; */
+  margin-left: 1%;
+  background-image: url('./Grid.png'), url('Background_Illustration.png');
+  background-position: center, 36.8vw 2vh;
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#intro {
+  display: inline-block;
+  position: relative;
+  top: 22vh;
+  left: 7vw;
+}
+
+#intro>p {
+  font-size: 7vh;
+  margin: 0;
+}
+
+#intro>p>span {
+  color: #EB8C00;
+  font-weight: 600;
+}
+
+.main_btn {
+  margin-top: 3vh;
+  background-color: #0d88e6;
+  color: #FFFFFF;
+  font-size: 1.4vw;
+  height: 5vh;
+  width: 10vw;
+  border-radius: 5px;
+  border: none;
+}
+
+.title_bar {
+  width: 100%;
+  height: 5%;
+  background-color: #0d88e6;
+  background-image: url('./Assets/Patterns on Red Header Strip/Regulatory Compliance Interpreter.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  background-position: 48.5vw 0;
+  padding: 2vh 0;
+}
+
+.title_bar>h2 {
+  margin: 0.5vh 1vw;
+  padding: 0;
+  font-size: 3vh;
+}
+
+.upload_section {
+  width: 100%;
+  /* margin-top: 4vh; */
+  /* height: 4vh; */
+  /* background-color: #D93954; */
+  /* background-image: url('./Assets/Patterns on Red Header Strip/Regulatory Compliance Interpreter.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  /* border-radius: 10px; */
+  /* background-position: 51vw 0; */
+  /* padding: 2vh; */
+}
+
+.upload_section>h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.upload_section>p {
+  font-size: 1.8vh;
+  margin: 1% 0;
+}
+
+#upload-form {
+  margin: 2% 0;
+}
+
+.upload-container {
+  flex: 2;
+  padding: 20px;
+  /* border: 2px solid #ccc; */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+#dropbox {
+  border: 2px dashed #0d88e6;
+  padding: 2vh;
+  background-color: black;
+
+}
+
+.upload-btn {
+  display: block;
+  /* margin: 20px 0; */
+}
+
+.upload-btn>p {
+  text-align: center;
+  font-size: 2.3vh;
+}
+
+.upload-btn>p>span {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.upload_preview {
+  height: 100%;
+  padding: 1vh 1vw;
+  background-color: #161616;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.upload_preview>iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.container_doc {
+  display: flex;
+  flex-direction: row;
+  /* height: 100%; */
+  height: 56vh;
+  margin-top: 1%;
+}
+
+.container_upload {
+  width: 50%;
+  /* height: 70%; */
+}
+
+.container_interact {
+  width: 48%;
+  margin: 0.5vh 0 0 1vw;
+  height: 65vh;
+}
+
+.summary {
+  /* background-image: url('./Assets/Group\ 19832.png');
+    background-repeat: no-repeat;
+    background-size: 12vh;
+    background-position: 50% 70%; */
+  /* background-color: #303030; */
+  background-color: black;
+  padding: 1em;
+  border-radius: 5px;
+  height: 50vh;
+  overflow: auto;
+}
+
+.summary>p {
+  margin: 0;
+  font-size: 2.2vh;
+  font-weight: 200;
+}
+
+hr {
+  border: 1px solid #767676;
+}
+
+#text-form {
+  display: flex;
+  flex-direction: row;
+}
+
+#input-text {
+  width: 83%;
+  background-color: #0d88e6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 3vh;
+  padding: 2%;
+  margin: 0;
+  resize: none;
+  font-size: 2vh;
+  font-family: PwC Helvetica Neue;
+  overflow: hidden;
+  min-height: 5px;
+  max-height: 100px;
+  margin-top: 1%;
+}
+
+::placeholder {
+  color: #FFF;
+}
+
+#submit-btn {
+  background-color: #0d88e6;
+  border: none;
+  border-radius: 5px;
+  height: 6vh;
+  margin-left: 2%;
+  /* margin-top: 0%; */
+  transform: translate(17%, 17%);
+}
+
+#submit-btn>img {
+  width: 2vw;
+  filter: invert(100%) sepia(45%) saturate(870%) hue-rotate(142deg) brightness(116%) contrast(112%);
+}
+
+#output-container {
+  margin-top: 1%;
+}
+
+.message-container {
+  display: flex;
+  margin-top: 2%;
+  align-items: flex-end;
+
+}
+
+.chat-icon {
+  height: 3vh;
+}
+
+.message {
+  color: black;
+  font-size: 2vh;
+  font-weight: 400;
+  padding: 1vh 0.5vw;
+  width: 90%;
+
+}
+
+.user>.message {
+  background-color: #E998A6;
+  margin-left: 2%;
+  border-radius: 5px 5px 5px 0;
+}
+
+.user {
+  flex-direction: row-reverse;
+}
+
+.bot>.message {
+  background-color: #9AA4BE;
+  margin-right: 2%;
+  border-radius: 5px 5px 0 5px;
+}
+
+txt {
+  font-weight: bold;
+}
+
+#pdf-iframe {
+  width: 100%;
+  height: 99%;
+  border: none;
+}
+
+.a-footer{
+  bottom: 0;
+  position: fixed;
+  background-color: #1F1F1F;
+  padding: 1vh 2vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar>p{
+  width: 18%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: grey;
+}
